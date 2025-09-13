@@ -96,15 +96,13 @@
 <body>
   <div class="card">
     <h1>Secret Gate</h1>
-    <p>Solve the riddle .</p>
+    <p>Solve the riddle. (Type your answer in English letters)</p>
 
     <div class="riddle">
       <strong>Riddle:</strong>
       <div style="margin-top:8px">
-        word 1:
-       “I decide to do something and stick with it. Once I do, I can’t take it back. What am I?”<br>
-        word 2:
-      “You can eat cotton candy, win prizes, hear music, and scream on rides. What am I?”
+        “ഞാന്‍ നോക്കിയാലെന്നെ നോക്കും<br>
+        ഞാന്‍ ചിരിച്ചാലവനും ചിരിക്കും”
       </div>
     </div>
 
@@ -114,12 +112,12 @@
     </div>
 
     <div class="result" id="result"></div>
-    <small class="hint"></small>
+    <small class="hint">Hint: It shows you… you.</small>
   </div>
 
 <script>
   const SECRET_URL = "https://github.com/boredcosmicdeity/CommitCarnival"; // change to your hosted site
-  const allowed = ["commit carnival","commitcarnival"];
+  const allowed = ["kannadi","mirror"];
   const answerInput = document.getElementById('answer');
   const res = document.getElementById('result');
 
@@ -138,7 +136,7 @@
       res.innerHTML = 'Access granted — <a class="secret-link" href="' + SECRET_URL + '" target="_blank">Enter Commit Carnival</a>';
     } else {
       res.style.color="#ffc2c2";
-      res.textContent = "Nope. Try again or read the riddle more carefully.";
+      res.textContent = "Nope. Try again.";
     }
   }
 </script>
